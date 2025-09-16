@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Que o Espírito Santo te Abençoe, Harrison Fense ✨</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    color: #f5f4ef;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0;
+  }
+  header {
+    padding: 40px 20px 30px;
+    background: radial-gradient(circle at top, rgba(212,175,55,0.15), transparent 70%), #0a0a0a;
+  }
+  h1 {
+    color: #d4af37;
+    font-size: clamp(2rem, 6vw, 3rem);
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .photo-container {
+    display: inline-block;
+    border: 4px solid #d4af37;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(212,175,55,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .photo-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 35px rgba(212,175,55,0.5);
+  }
+  .photo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  footer {
+    padding: 15px;
+    font-size: clamp(0.7rem, 2.5vw, 0.9rem);
+    color: #aaa;
+  }
+  #confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+  }
+  :root {
+    --bg: #0a0a0a;
+    --bg-soft: #121212;
+    --gold: #d4af37;
+    --gold-soft: #e6c766;
+    --text: #f5f4ef;
+    --muted: #b8b5aa;
+    --ring: rgba(212,175,55,0.45);
+  }
+  button {
+    background: linear-gradient(90deg, #d4af37, #e6c766);
+    border: none;
+    padding: clamp(10px, 2vw, 15px) clamp(20px, 5vw, 30px);
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    color: #0a0a0a;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  button:hover {
+    background: linear-gradient(90deg, #e6c766, #d4af37);
+    transform: translateY(-2px);
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(212,175,55,.4);
+    background: linear-gradient(180deg, rgba(212,175,55,.14), rgba(212,175,55,.06));
+    color: var(--gold-soft);
+    font-weight: 600;
+    font-size: clamp(0.7rem, 2.5vw, 0.85rem);
+  }
+  .card {
+    padding: 20px;
+    margin: 10px auto;
+  }
+  .message p {
+    margin: 12px auto 0;
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+  }
+  .message .highlight {
+    color: var(--gold-soft);
+    font-weight: 600;
+  }
+  blockquote.quote {
+    margin: 0;
+    padding: 20px;
+    font-style: italic;
+    color: #efeade;
+    border-left: 3px solid var(--gold);
+    background: linear-gradient(90deg, rgba(212,175,55,.08), transparent 60%);
+    border-radius: 12px;
+    text-align: left;
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+  }
+  .verse {
+    display: block;
+    color: var(--muted);
+    font-size: clamp(0.7rem, 2vw, 0.8rem);
+    margin-top: 6px;
+  }
+  .gold-border {
+    position: relative;
+    border: 1px solid rgba(212,175,55,0.35);
+    border-radius: 18px;
+    background: linear-gradient(var(--bg-soft), var(--bg-soft)) padding-box, linear-gradient(135deg, rgba(212,175,55,.6), rgba(230,199,102,.25)) border-box;
+    box-shadow: 0 0 0 1px rgba(212,175,55,0.15) inset, 0 6px 28px rgba(0,0,0,0.35);
+  }
+</style>
+</head>
+<body>
+<audio id="musica" src="harisson.mp3" preload="auto" loop></audio>
+
+<canvas id="confetti"></canvas>
+<header>
+  <div class="badge" aria-label="Celebração de Crisma">✟ Sacramento da Confirmação</div>
+  <h1>Que o Espírito Santo te Abençoe, Harisson Fense!</h1>
+  <p>Hoje o Céu se alegra contigo. Que a chama do Espírito Santo ilumine teus passos e te faça sinal do amor de Deus no mundo.</p>
+  <button id="celebrar">🙏 Celebrar</button>
+</header>
+<div class="photo-container">
+  <img src="harisson.png" alt="Foto do Harrison" />
+</div>
+<div class="gold-border card message">
+  <p>Harisson, hoje você diz <span class="highlight">“Eis-me aqui”</span> ao Senhor. Recebe os dons do Espírito para ser testemunha viva de Cristo.</p>
+  <p>Que a tua vida seja um farol de fé, esperança e caridade. Lembra-te: onde estiveres, Deus está contigo, fortalecendo o teu coração.</p>
+  <p>Caminha com coragem! A Igreja te envia como discípulo missionário para levar luz aos que estão na escuridão. ✟</p>
+</div>
+<section class="gold-border card">
+  <blockquote class="quote">“Vós sois a luz do mundo... Assim brilhe a vossa luz diante dos homens, para que vejam as vossas boas obras e glorifiquem ao vosso Pai que está nos céus.”<span class="verse">— Mateus 5,14.16</span></blockquote>
+</section>
+<footer>Com fé e alegria celebramos este dia santo ✨</footer>
+
+<script>
+const musica = document.getElementById('musica');
+const canvas = document.getElementById('confetti');
+const ctx = canvas.getContext('2d');
+let W = canvas.width = window.innerWidth;
+let H = canvas.height = window.innerHeight;
+
+window.addEventListener('resize', () => {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+});
+
+const confetes = [];
+function criarConfete() {
+  return { x: Math.random() * W, y: Math.random() * -H, r: Math.random() * 6 + 4, d: Math.random() * H, color: `hsl(${Math.random() * 60 + 40}, 70%, 60%)`, tilt: Math.random() * 10 - 10 };
+}
+function desenharConfetes() {
+  ctx.clearRect(0, 0, W, H);
+  confetes.forEach(c => { ctx.beginPath(); ctx.fillStyle = c.color; ctx.ellipse(c.x, c.y, c.r, c.r/2, Math.PI/4, 0, 2*Math.PI); ctx.fill(); });
+  atualizarConfetes();
+}
+function atualizarConfetes() {
+  confetes.forEach(c => { c.y += Math.cos(c.d) + 1 + c.r/2; c.x += Math.sin(c.d); if (c.y > H) { c.x = Math.random() * W; c.y = Math.random() * -10; } });
+}
+
+document.getElementById('celebrar').addEventListener('click', () => {
+  confetes.length = 0;
+  for (let i = 0; i < 150; i++) confetes.push(criarConfete());
+  musica.play();
+  const animar = () => { desenharConfetes(); requestAnimationFrame(animar); };
+  animar();
+});
+</script>
+</body>
+</html>
